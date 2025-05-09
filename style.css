@@ -300,8 +300,8 @@ h2 {
 /* Cart Page */
 .cart-item {
     display: flex;
-    margin-bottom: 30px;
-    padding-bottom: 30px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
     border-bottom: 1px solid #eee;
 }
 
@@ -511,4 +511,14 @@ a.welcome-button, a.checkout-button, a.download-button, a.shop-again-button {
     text-decoration: none;
     text-align: center;
     cursor: pointer;
+}
+
+.back-to-menu {
+    text-decoration: none;
+    color: #5e35b1;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    display: block;
 }
