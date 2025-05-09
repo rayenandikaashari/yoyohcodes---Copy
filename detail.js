@@ -7,8 +7,7 @@ function loadProductDetails() {
         
         document.getElementById('product-detail-name').textContent = product.name;
         document.getElementById('product-detail-price').textContent = `Rp${product.price.toLocaleString()}`;
-        document.getElementById('product-detail-description').textContent = product.description || 
-            `${product.name} adalah produk sembako berkualitas yang tersedia di Warung Sembako Nenek Yoyoh.`;
+        document.getElementById('product-detail-description').textContent = product.description;
         
         // Set product image if available
         if (product.image) {

@@ -8,14 +8,6 @@
     display: block;
 }
 
-.promotion-image img {
-    width: 100%;
-    max-width: 80px;
-    height: auto;
-    border-radius: 5px; 
-    margin-top: 10px;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -162,11 +154,11 @@ h2 {
     position: relative;
 }
 
-.product-image {
-    width: 80px;
-    height: 80px;
-    background-color: #f5f5f5;
-    margin-bottom: 10px;
+.product-image img {
+    width: 100%; /* Gambar akan menyesuaikan lebar elemen induknya */
+    height: 150px; /* Tetapkan tinggi yang konsisten */
+    object-fit: contain; /* Menjaga rasio aspek gambar */
+    display: block;
 }
 
 .product-name {
@@ -177,6 +169,14 @@ h2 {
 .product-price {
     color: #4CAF50;
     font-weight: bold;
+}
+
+.product-detail-image img {
+    width: 100%; /* Gambar akan menyesuaikan lebar elemen induknya */
+    height: 220px; /* Tetapkan tinggi yang konsisten */
+    object-fit: contain; /* Menjaga rasio aspek gambar */
+    display: block;
+    border-radius: 10px; /* Opsional: Tambahkan sudut melengkung */
 }
 
 .add-button {
@@ -248,43 +248,6 @@ h2 {
     margin-bottom: 20px;
 }
 
-.add-ons-title {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.add-ons-list {
-    display: flex;
-    overflow-x: auto;
-    margin-bottom: 20px;
-    padding-bottom: 5px;
-}
-
-.add-on-item {
-    width: 80px;
-    height: 80px;
-    background-color: #f0e6ff;
-    margin-right: 10px;
-    border-radius: 10px;
-    position: relative;
-}
-
-.add-on-button {
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-    width: 20px;
-    height: 20px;
-    background-color: black;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 10px;
-    cursor: pointer;
-    border: none;
-}
 
 .add-to-cart-button {
     background-color: #5e35b1;
