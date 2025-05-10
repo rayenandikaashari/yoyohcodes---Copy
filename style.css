@@ -268,11 +268,12 @@ h2 {
     border-bottom: 1px solid #eee;
 }
 
-.cart-item-image {
-    width: 80px;
-    height: 80px;
-    background-color: #f0f0f0;
-    margin-right: 15px;
+.cart-item-image img {
+    width: 80px; /* Sesuaikan dengan ukuran container */
+    height: 80px; /* Tetapkan tinggi yang konsisten */
+    object-fit: contain; /* Menjaga rasio aspek gambar */
+    border-radius: 5px; /* Opsional: Tambahkan sudut melengkung */
+    display: block;
 }
 
 #cart-items-container {
