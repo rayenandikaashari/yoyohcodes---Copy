@@ -1,9 +1,11 @@
 // Product data
 const products = [
-    { id: 1, name: 'Minyakita', price: 36000, category: 'Minyak', image: '/images/minyak.png',description:'Minyakita adalah minyak goreng kemasan bersubsidi yang jernih, sehat, terjangkau, dan cocok digunakan untuk menggoreng maupun menumis kebutuhan masakan sehari-hari.'},
-    { id: 2, name: 'Beras', price: 15000, category: 'Beras', image: '/images/Beras.png',description: 'Beras 5 kg adalah bahan pangan pokok yang bergizi, pulen, wangi, dan mudah dimasak untuk memenuhi kebutuhan konsumsi rumah tangga sehari-hari.'},
+    { id: 1, name: 'Minyakita', price: 36000, category: 'Minyak', image: '/images/minyak.png',
+    description:'Minyakita adalah minyak goreng kemasan bersubsidi yang jernih, sehat, terjangkau, dan cocok digunakan untuk menggoreng maupun menumis kebutuhan masakan sehari-hari.'},
+    { id: 2, name: 'Beras', price: 15000, category: 'Beras', image: '/images/Beras.png',
+    description: 'Beras 5 kg adalah bahan pangan pokok yang bergizi, pulen, wangi, dan mudah dimasak untuk memenuhi kebutuhan konsumsi rumah tangga sehari-hari.'},
     { id: 3, name: 'Gas LPG 3kg', price: 20000, category: 'Gas', image: '/images/gas.png', 
-      description: 'Gas LPG 3 kg adalah bahan bakar memasak bersubsidi yang ringan, praktis, hemat, dan mudah digunakan untuk kebutuhan rumah tangga sehari-hari.' },
+    description: 'Gas LPG 3 kg adalah bahan bakar memasak bersubsidi yang ringan, praktis, hemat, dan mudah digunakan untuk kebutuhan rumah tangga sehari-hari.' },
     { id: 4, name: 'Indomie', price: 3500, category: 'Mie', image: '/images/Indomie.png' },
     { id: 5, name: 'Mie Sedaap', price: 3000, category: 'Mie', image: '/images/mieSedaap.png'},
     { id: 6, name: 'Supermie', price: 3000, category: 'Mie', image: '/images/supermi.png' },
