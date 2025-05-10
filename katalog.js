@@ -79,9 +79,16 @@ function searchProducts() {
     });
 }
 
-// Function to filter products by category
-function filterByCategory(category) {
+function filterByCategory(category, element) {
+    // Filter produk berdasarkan kategori
     loadProducts(category);
+
+    // Hapus kelas 'active' dari semua tombol kategori
+    const categoryItems = document.querySelectorAll('.category-item');
+    categoryItems.forEach(item => item.classList.remove('active'));
+
+    // Tambahkan kelas 'active' ke tombol yang diklik
+    element.classList.add('active');
 }
 
 // Initialize the page

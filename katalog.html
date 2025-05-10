@@ -17,23 +17,23 @@
             </div>
             
             <div class="category-list">
-                <div class="category-item" onclick="filterByCategory('all')">
-                    <div class="category-icon">All</div>
-                    <div>All</div>
-                </div>
-                <div class="category-item" onclick="filterByCategory('Beras')">
-                    <div class="category-icon">🌾</div>
-                    <div>Beras</div>
-                </div>
-                <div class="category-item" onclick="filterByCategory('Minyak')">
-                    <div class="category-icon">🧴</div>
-                    <div>Minyak</div>
-                </div>
-                <div class="category-item" onclick="filterByCategory('Bumbu')">
-                    <div class="category-icon">🧂</div>
-                    <div>Vetsin</div>
-                </div>
-            </div>
+    <div class="category-item active" onclick="filterByCategory('all', this)">
+        <div class="category-icon">All</div>
+        <div>All</div>
+    </div>
+    <div class="category-item" onclick="filterByCategory('Beras', this)">
+        <div class="category-icon">🌾</div>
+        <div>Beras</div>
+    </div>
+    <div class="category-item" onclick="filterByCategory('Minyak', this)">
+        <div class="category-icon">🧴</div>
+        <div>Minyak</div>
+    </div>
+    <div class="category-item" onclick="filterByCategory('Bumbu', this)">
+        <div class="category-icon">🧂</div>
+        <div>Vetsin</div>
+    </div>
+</div>
             
             <h2>Popular</h2>
             <div class="product-grid" id="product-grid">
