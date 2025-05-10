@@ -275,6 +275,14 @@ h2 {
     margin-right: 15px;
 }
 
+#cart-items-container {
+    max-height: 560px; /* Sesuaikan tinggi maksimum */
+    overflow-y: auto;
+    border: 1px solid #ddd; /* Opsional: Tambahkan border untuk estetika */
+    margin-bottom: 20px; /* Opsional: Tambahkan jarak dengan elemen lain */
+    padding: 10px; /* Opsional: Tambahkan padding */
+}
+
 .cart-item-info {
     flex: 1;
 }
