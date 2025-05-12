@@ -11,10 +11,10 @@
         <!-- Menu Page -->
         <div class="page active">
             <h1>Menu</h1>
-            <div class="search-bar">
-                <span>🔍</span>
-                <input type="text" placeholder="Mencari barang" id="search-input" oninput="searchProducts()">
-            </div>
+            <div class="search-bar" id="search-bar" onclick="redirectToSearchPage()">
+            <span>🔍</span>
+            <input type="text" placeholder="Mencari barang" id="search-input" oninput="searchProducts()">
+        </div>
             
             <div class="category-list">
     <div class="category-item active" onclick="filterByCategory('all', this)">
@@ -46,8 +46,10 @@
                     <div>Home</div>
                 </div>
                 <div class="nav-item">
-                    <div class="nav-icon">🔍</div>
-                    <div>Search</div>
+                    <a href="search.html" style="text-decoration: none; color: inherit;">
+                        <div class="nav-icon">🔍</div>
+                        <div>Search</div>
+                    </a>
                 </div>
                 <div class="nav-item">
                     <a href="cart.html" style="text-decoration: none; color: inherit;">
