@@ -1,16 +1,31 @@
 // Product data
 const products = [
     { id: 1, name: 'Minyakita', price: 36000, category: 'Minyak', image: '/images/minyak.png',
-    description:'Minyakita adalah minyak goreng kemasan bersubsidi yang jernih, sehat, terjangkau, dan cocok digunakan untuk menggoreng maupun menumis kebutuhan masakan sehari-hari.'},
+    description: 'Minyakita adalah minyak goreng kemasan bersubsidi yang jernih, sehat, terjangkau, dan cocok digunakan untuk menggoreng maupun menumis kebutuhan masakan sehari-hari.' },
+
     { id: 2, name: 'Beras', price: 15000, category: 'Beras', image: '/images/Beras.png',
-    description: 'Beras 5 kg adalah bahan pangan pokok yang bergizi, pulen, wangi, dan mudah dimasak untuk memenuhi kebutuhan konsumsi rumah tangga sehari-hari.'},
+    description: 'Beras 5 kg adalah bahan pangan pokok yang bergizi, pulen, wangi, dan mudah dimasak untuk memenuhi kebutuhan konsumsi rumah tangga sehari-hari.' },
+
     { id: 3, name: 'Gas LPG 3kg', price: 20000, category: 'Gas', image: '/images/Gas.png', 
     description: 'Gas LPG 3 kg adalah bahan bakar memasak bersubsidi yang ringan, praktis, hemat, dan mudah digunakan untuk kebutuhan rumah tangga sehari-hari.' },
-    { id: 4, name: 'Indomie', price: 3500, category: 'Mie', image: '/images/Indomie.png' },
-    { id: 5, name: 'Mie Sedaap', price: 3000, category: 'Mie', image: '/images/miesedaap.png'},
-    { id: 6, name: 'Supermie', price: 3000, category: 'Mie', image: '/images/supermi.png' },
-    { id: 7, name: 'Pop Mie', price: 6000, category: 'Mie', image: '/images/popmie.png' },
-    { id: 8, name: 'Sunlight', price: 5000, category: 'Sabun', image: '/images/Sunlight.png' }
+
+    { id: 4, name: 'Indomie', price: 3500, category: 'Mie', image: '/images/Indomie.png', 
+    description: 'Indomie adalah mie instan favorit masyarakat Indonesia dengan berbagai varian rasa yang lezat dan mudah disiapkan untuk sajian cepat dan praktis.' },
+
+    { id: 5, name: 'Mie Sedaap', price: 3000, category: 'Mie', image: '/images/miesedaap.png',
+    description: 'Mie Sedaap menawarkan rasa gurih dan kenyal yang nikmat, cocok untuk disantap kapan saja sebagai pilihan mie instan berkualitas.' },
+
+    { id: 6, name: 'Supermie', price: 3000, category: 'Mie', image: '/images/supermi.png',
+    description: 'Supermie adalah mie instan klasik dengan cita rasa khas dan tekstur lembut, ideal untuk menu harian yang praktis dan mengenyangkan.' },
+
+    { id: 7, name: 'Pop Mie', price: 6000, category: 'Mie', image: '/images/popmie.png',
+    description: 'Pop Mie adalah mie instan dalam cup yang praktis, cukup diseduh air panas dan siap disantap kapan saja, cocok untuk aktivitas sibuk.' },
+
+    { id: 8, name: 'Sunlight', price: 5000, category: 'Sabun', image: '/images/Sunlight.png',
+    description: 'Sunlight adalah sabun pencuci piring dengan formula aktif penghilang lemak, membuat peralatan makan bersih, higienis, dan harum.' },
+    
+    { id: 9, name: 'Sasa', price: 2000, category: 'Bumbu', image: '/images/sasa.png',
+    description: 'Sasa adalah penyedap rasa MSG yang memberikan cita rasa gurih dan lezat pada berbagai masakan rumah tangga.' },
 ];
 
 // Function to redirect to search page
