@@ -15,25 +15,9 @@ const products = [
 
 // Function to redirect to search page
 function redirectToSearchPage() {
-    const query = document.getElementById('search-input').textContent.trim();
+    const query = document.getElementById('search-input').value;
     window.location.href = `search.html?query=${encodeURIComponent(query)}`;
 }
-
-// Initialize the page
-document.addEventListener('DOMContentLoaded', function () {
-    const urlParams = new URLSearchParams(window.location.search);
-    const query = urlParams.get('query');
-    
-    const searchInput = document.getElementById('search-input');
-    if (query) {
-        searchInput.textContent = query; // Isi search bar dengan query dari URL
-        searchProducts(); // Jalankan pencarian
-    }
-
-    // Fokuskan ke search bar
-    const searchBar = document.getElementById('search-bar');
-    searchBar.scrollIntoView(); // Pastikan terlihat di layar
-});
 
 // Function to save product data to localStorage when a product is clicked
 function viewProduct(productId) {
@@ -71,7 +55,7 @@ function loadProducts(category = 'all') {
 
 // Function to search products
 function searchProducts() {
-    const query = document.getElementById('search-input').value.toLowerCase().trim();
+    const query = document.getElementById('search-input').value.toLowerCase();
     
     if (query === '') {
         loadProducts();
@@ -113,7 +97,11 @@ function filterByCategory(category, element) {
     element.classList.add('active');
 }
 
-// Initialize the page
 document.addEventListener('DOMContentLoaded', function() {
+    // Fokuskan ke elemen search bar
+    const searchInput = document.getElementById('search-input');
+    searchInput.focus();
+
+    // Muat produk saat halaman dimuat
     loadProducts();
 });
