@@ -19,19 +19,6 @@ function redirectToSearchPage() {
     window.location.href = `search.html?query=${encodeURIComponent(query)}`;
 }
 
-// Initialize the page
-document.addEventListener('DOMContentLoaded', function () {
-    const urlParams = new URLSearchParams(window.location.search);
-    const query = urlParams.get('query');
-    
-    const searchInput = document.getElementById('search-input');
-    if (query) {
-        searchInput.value = query; // Isi search bar dengan query dari URL
-        searchProducts(); // Jalankan pencarian
-    }
-    searchInput.focus(); // Fokuskan ke search bar
-});
-
 // Function to save product data to localStorage when a product is clicked
 function viewProduct(productId) {
     const product = products.find(p => p.id === productId);
