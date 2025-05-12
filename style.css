@@ -209,12 +209,15 @@ h2 {
 }
 
 .product-detail-header {
-    background-color: #5e35b1;
+    background-color: #5e35b1; /* Warna ungu */
     height: 50px;
     position: relative;
     display: flex;
     align-items: center;
-    padding: 0 15px;
+    width: calc(100% + 30px); /* Tambahkan lebar ke kiri dan kanan */
+    padding: 0 15px; /* Padding kiri dan kanan */
+    margin: 0 -15px 0 -15px; /* Geser ke kiri dan kanan dengan margin negatif */
+    box-sizing: border-box; /* Pastikan padding dihitung dalam lebar elemen */
 }
 
 .back-button {
@@ -561,4 +564,25 @@ a.welcome-button, a.checkout-button, a.download-button, a.shop-again-button {
     margin-bottom: 30px;
     padding: 10px 0;
     display: block;
+}
+
+.cash-button {
+    background-color: white; /* Warna latar putih */
+    color: #5e35b1; /* Teks berwarna ungu */
+    width: 100%; /* Lebar penuh */
+    border: 2px solid #5e35b1; /* Outline berwarna ungu */
+    padding: 15px; /* Padding untuk ukuran tombol */
+    border-radius: 5px; /* Sudut melengkung */
+    font-weight: bold; /* Teks tebal */
+    cursor: pointer; /* Pointer saat hover */
+    margin-top: 20px; /* Jarak atas */
+    margin-bottom: 25px; /* Jarak bawah */
+    text-align: left; /* Teks rata tengah */
+    font-size: 16px; /* Ukuran font */
+    display: inline-block; /* Membuat tombol terlihat seperti blok */
+}
+
+.cash-button:hover {
+    background-color: #5e35b1; /* Warna ungu saat hover */
+    color: white; /* Teks berubah menjadi putih saat hover */
 }
